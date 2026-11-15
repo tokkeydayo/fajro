@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAJRO</title>
+<meta name="description" content="FAJROのリンク集。SNSと、作ったアプリの一覧。">
+<style>
+  :root{
+    --bg:#141110;
+    --card:#1e1a17;
+    --card-border:#2e2721;
+    --text:#f3ede7;
+    --sub:#a89c90;
+    --accent:#ff8a3c;
+    --accent2:#ffc46b;
+    --badge:#3a2c1e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:56px 20px 64px;
+  }
+  main{max-width:480px;margin:0 auto;}
+  header{text-align:center;margin-bottom:44px;}
+  .logo{width:190px;height:190px;border-radius:28px;display:block;margin:0 auto;}
+  h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+  .role{color:var(--sub);font-size:13px;margin-top:10px;letter-spacing:.08em;}
+  section{margin-bottom:36px;}
+  h2{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.24em;
+    color:var(--sub);
+    margin-bottom:14px;
+  }
+  .sns{display:flex;flex-direction:column;gap:10px;}
+  .sns a{
+    display:flex;align-items:center;justify-content:space-between;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:16px 18px;
+    color:var(--text);
+    text-decoration:none;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .sns a:active{transform:scale(.99);}
+  .sns a:hover{border-color:var(--accent);}
+  .sns .name{font-size:15px;font-weight:600;}
+  .sns .handle{color:var(--sub);font-size:13px;}
+  .apps{display:flex;flex-direction:column;gap:10px;}
+  .app{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:18px;
+  }
+  .app .top{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .app .appname{font-size:16px;font-weight:700;}
+  .badge{
+    font-size:11px;
+    color:var(--accent2);
+    background:var(--badge);
+    border-radius:999px;
+    padding:4px 10px;
+    white-space:nowrap;
+    letter-spacing:.06em;
+  }
+  .app .desc{color:var(--sub);font-size:13px;line-height:1.7;margin-top:8px;}
+  footer{text-align:center;color:#6f6459;font-size:11px;margin-top:48px;letter-spacing:.14em;}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="logo" src="logo.webp" alt="FAJRO">
+    <h1>FAJRO</h1>
+    <p class="role">大学生｜アプリ個人開発</p>
+  </header>
+
+  <section>
+    <h2>SNS</h2>
+    <div class="sns">
+      <a href="https://www.tiktok.com/@fajro2026" target="_blank" rel="noopener">
+        <span class="name">TikTok</span><span class="handle">@fajro2026</span>
+      </a>
+      <a href="https://www.instagram.com/fajro2026" target="_blank" rel="noopener">
+        <span class="name">Instagram</span><span class="handle">@fajro2026</span>
+      </a>
+      <a href="https://x.com/fajro2026" target="_blank" rel="noopener">
+        <span class="name">X</span><span class="handle">@fajro2026</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>作ったアプリ</h2>
+    <div class="apps">
+      <div class="app">
+        <div class="top">
+          <span class="appname">ビルログ</span>
+          <span class="badge">審査中</span>
+        </div>
+        <p class="desc">フリーランス向けの請求書アプリ。見積書・請求書・領収書の作成と管理ができます。</p>
+      </div>
+      <div class="app">
+        <div class="top">
+          <span class="appname">トドマネ</span>
+          <span class="badge">審査中</span>
+        </div>
+        <p class="desc">罪悪感の出ないToDoアプリ。iPhoneとApple Watchで使えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>FAJRO</footer>
+</main>
+</body>
+</html>
